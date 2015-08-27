@@ -2,6 +2,8 @@
 
 A simple API to store & retrieve JSON objects.
 
+Get your API-Key at http://OpenBucket.io
+
 ---
 
 **POST** Create a new JSON file
