@@ -10,7 +10,8 @@ Get your API-Key at http://OpenBucket.io
 **POST** Create a new JSON file
 
 ```
-curl -X POST -H "Content-Type: application/json" http://api.openbucket.io -d '{"key":"YOUR_API_KEY", "content":{"some-key":"Some Value"}}'
+curl -X POST -H "Content-Type: application/json" http://api.openbucket.io/new -d '{"key":"YOUR_API_KEY", "content":{"some-key":"Some Value"}}'
+
 ```
 which returns 
 
@@ -35,7 +36,8 @@ curl http://api.openbucket.io/FILE_NAME.json
 **POST** Update your JSON file
 
 ```
-curl -X POST -H "Content-Type: application/json" http://api.openbucket.io -d '{"pass":"FILE_PASS", "content":{"other-key":"Other Value"}}'
+curl -X POST -H "Content-Type: application/json" http://api.openbucket.io/FILE_NAME.json -d '{"pass":"FILE_PASS", "content":{"other-key":"Other Value"}}'
+
 ```
 
 <hR>
